@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390332192280",
+    "project_id": "inappmessaging-40f07",
+    "storage_bucket": "inappmessaging-40f07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390332192280:android:54c231daf9fbdb0e30d56d",
+        "android_client_info": {
+          "package_name": "com.example.inappmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390332192280-lrfvh1plcetjq7r5abnktpfbkjcg12eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLEQF9TDvcJgvHopANhms6XI1nJRmEMjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390332192280-lrfvh1plcetjq7r5abnktpfbkjcg12eq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
