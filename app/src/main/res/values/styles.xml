@@ -1,0 +1,9 @@
+<resources>
+
+  <style name="DialogFragmentNormal" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowSoftInputMode">adjustResize</item>
+    <item name="android:layoutDirection">ltr</item>
+  </style>
+
+
+</resources>

@@ -30,6 +30,11 @@ android {
     }
     buildToolsVersion '31.0.0'
     compileSdkVersion 31
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -45,7 +50,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-inappmessaging-display'
     implementation 'com.google.firebase:firebase-analytics'
-
+    implementation 'com.google.dagger:hilt-android:2.38.1'
+    kapt 'com.google.dagger:hilt-android-compiler:2.38.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
 
 
 }
