@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InAppMessaging</string>
+    <string name="close">بستن</string>
 </resources>

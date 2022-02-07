@@ -10,6 +10,7 @@ import com.google.firebase.inappmessaging.FirebaseInAppMessaging
 import com.google.firebase.inappmessaging.FirebaseInAppMessagingDisplayCallbacks
 import com.google.firebase.inappmessaging.model.InAppMessage
 import dagger.hilt.android.AndroidEntryPoint
+import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 import javax.inject.Inject
@@ -41,5 +42,17 @@ class MainActivity : AppCompatActivity() {
         FirebaseInAppMessaging.getInstance().setMessageDisplayComponent { inAppMessage: InAppMessage, callBacks: FirebaseInAppMessagingDisplayCallbacks? ->
             messaging.checkMessageType(inAppMessage,callBacks!!, this)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (!EventBus.getDefault().isRegistered(this))
+            EventBus.getDefault().register(this)
+    }
+
+    override fun onDestroy() {
+        if (EventBus.getDefault().isRegistered(this))
+            EventBus.getDefault().unregister(this)
+        super.onDestroy()
     }
 }

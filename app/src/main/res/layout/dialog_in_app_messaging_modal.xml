@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:gravity="center|center_horizontal"
         android:orientation="vertical"
-        android:paddingTop="@dimen/margin_20"
+        android:paddingTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -74,10 +74,10 @@
           android:layout_height="wrap_content"
           android:layout_gravity="center"
           android:gravity="center"
-          android:padding="@dimen/margin_4"
+          android:padding="4dp"
           android:text="@{title}"
           android:textColor="@{Color.parseColor(textColor)}"
-          android:textSize="@dimen/text_size_5"
+          android:textSize="16sp"
           android:textStyle="bold"
           tools:text="عنوان"/>
 
@@ -95,12 +95,12 @@
           android:layout_height="wrap_content"
           android:layout_gravity="center"
           android:gravity="center"
-          android:paddingTop="@dimen/margin_8"
-          android:paddingBottom="@dimen/margin_8"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
           android:text="@{body}"
           android:textColor="@{Color.parseColor(textColor)}"
           android:visibility="@{body == null ? View.GONE : View.VISIBLE}"
-          android:textSize="@dimen/text_size_5"
+          android:textSize="16sp"
           tools:text="توضیحات"/>
 
         <View
@@ -108,7 +108,7 @@
           android:layout_height="1dp"
           android:alpha="0.5"
           android:layout_marginTop="16dp"
-          android:background="@color/LightGrey1" />
+          android:background="@color/LightGrey" />
 
         <LinearLayout
           android:layout_width="match_parent"
@@ -127,14 +127,14 @@
             android:paddingBottom="2dp"
             android:text="@string/close"
             android:textColor="@color/warmGrey"
-            android:textSize="@dimen/text_size_6"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
           <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:alpha="0.5"
-            android:background="@color/LightGrey1"
+            android:background="@color/LightGrey"
             android:visibility="@{actionText == null ? View.GONE : View.VISIBLE}"/>
 
           <TextView
@@ -152,7 +152,7 @@
             android:visibility="@{actionText == null ? View.GONE : View.VISIBLE}"
             android:textColor="@{btnTextColor != null ? Color.parseColor(btnTextColor) : @color/green_blue}"
             android:background="@{btnBodyColor != null ? Color.parseColor(btnBodyColor) : @color/white}"
-            android:textSize="@dimen/text_size_6" />
+            android:textSize="18sp" />
 
         </LinearLayout>
 

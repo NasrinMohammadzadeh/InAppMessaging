@@ -78,7 +78,7 @@
           app:layout_constraintBottom_toBottomOf="@id/image_view"
           app:layout_constraintStart_toStartOf="parent"
           android:orientation="vertical"
-          android:layout_margin="@dimen/margin_10"
+          android:layout_margin="10dp"
           android:gravity="end|center_vertical">
           <TextView
             android:id="@+id/tv_title"
@@ -86,7 +86,7 @@
             android:layout_height="wrap_content"
             android:text="@{title}"
             android:textColor="@{Color.parseColor(textColor)}"
-            android:textSize="@dimen/text_size_5"
+            android:textSize="16sp"
             android:textStyle="bold"
             tools:text="عنوان" />
 
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:text="@{body}"
             android:textColor="@{Color.parseColor(textColor)}"
-            android:textSize="@dimen/text_size_5"
+            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:visibility="@{body == null ? View.GONE : View.VISIBLE}"
             app:layout_constraintEnd_toStartOf="@id/image_view"
